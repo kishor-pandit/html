@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/submit-form" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="USERNAME"><br>
+            
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Full Name"><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email"><br><br>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="number" id="phone" name="phone" placeholder="Phone Number"><br><br>
+            
+            <label for="favcolor">Favorite Color:</label>
+            <input type="color" id="favcolor" name="favcolor"><br><br>
+            
+            <label>Gender:</label><br> 
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+            
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="">Select your country</option>
+                <option value="nepal">Nepal</option>
+                <option value="india">India</option>
+            </select><br><br>
+            
+            <label for="hobbies">Hobbies:</label>
+            <input type="text" id="hobbies" name="hobbies" placeholder="Hobbies"><br><br>
+            
+            <h5>Select the program</h5>
+            <input type="radio" id="101" name="class" value="BBA">
+            <label for="101">BBA</label><br>
+            <input type="radio" id="102" name="class" value="BCSIT">
+            <label for="102">BCSIT</label><br><br>
+            
+            <label for="rating">Rate from 1 to 10:</label>
+            <select id="rating" name="rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br><br>
+            
+            <label for="review">Your review:</label>
+            <textarea id="review" name="review" rows="4" cols="50"></textarea><br><br>
+            
+            <label for="file">Assignment file:</label>
+            <input type="file" id="file" name="file"><br><br>
+            
+            <label for="bio">Bio:</label>
+            <textarea id="bio" name="bio" placeholder="Please give your valuable words here" rows="5"></textarea><br><br>
+            
+        </fieldset>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
